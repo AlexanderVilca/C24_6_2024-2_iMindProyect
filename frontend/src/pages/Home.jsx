@@ -28,7 +28,7 @@ const Home = () => {
         <div className='lg:w-[570px]'>
           <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px]'>We help patients live a healthy, longer life</h1>
           <p className='text__para'>
-            asdadsad
+          Lorem ipsum dolor sit amet consectetur adipiscing elit, vivamus curae etiam malesuada sociis nam odio scelerisque, consequat proin nascetur placerat per interdum. Vel lobortis phasellus magna tortor orci ante natoque suspendisse, torquent nulla semper malesuada ligula non integer mus cubilia, nostra rutrum praesent eu magnis sem dignissim. 
           </p>
 
           <button className='btn'>Request an Appointment</button>
