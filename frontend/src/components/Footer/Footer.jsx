@@ -29,11 +29,11 @@ const quickLinks01 = [
   },
   {
     path: "/",
-    display: "About Us",
+    display: "Nosotros",
   },
   {
     path: "/services",
-    display: "Services",
+    display: "Servicios",
   },
   {
     path: "/",
@@ -44,7 +44,7 @@ const quickLinks01 = [
 const quickLinks02 = [
   {
     path: "/find-a-doctor",
-    display: "Find a doctor",
+    display: "Find a psycologist",
   },
   {
     path: "/",
@@ -76,8 +76,10 @@ const Footer = () => {
     <div className='container'>
       <div className='flex justify-between flex-col md:flex-row flex-wrap gap-[30px]'>
         <div>
-          <img src={logo} alt="" />
-          <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'> Copyright @ {year} developed by Alexander Vilca and Renzo Remuzgo all right reserved</p>
+            <label className='text-textColor text-[20px] leading-7 font-[800]'>
+              iMind
+            </label>
+          <p className='text-[16px] leading-7 font-[400] text-textColor mt-4'> Copyright @ {year} iMind all right reserved</p>
 
           <div className='flex items-center gap-3 mt-4'>
             {socialLinks.map((link, index)=>(
