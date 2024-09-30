@@ -1,5 +1,4 @@
 import DoctorCard from "./../../components/Doctors/DoctorCard"
-import { doctors } from "./../../assets/data/doctors"
 import Testimonial from "../../components/Testimonial/Testimonial"
 import { BASE_URL } from '../../config.js'
 import useFetchData from '../../hooks/useFetchData.jsx'
@@ -14,11 +13,11 @@ const Doctors = () => {
 
   const [debounceQuery, setDebounceQuery] = useState("")
 
-  const handleSearch =() => {
+  {/*const handleSearch =() => {
     setQuery(query.trim())
 
     console.log('handle search')
-  }
+  }*/}
 
   useEffect(()=>{
     const timeout = setTimeout(()=>{
@@ -41,7 +40,7 @@ const Doctors = () => {
       items-center justify-between">
         <input type="search" className="py-4 pl-4 pr-2 bg-transparent w-full focus:outline-none
         cursor-pointer placeholder:text-textColor" value={query} onChange={e=> setQuery(e.target.value)} />
-        <button className="btn mt-0 rounded-[0px] rounded-r-md" onClick={handleSearch}>Search</button>
+        {/*<button className="btn mt-0 rounded-[0px] rounded-r-md" onClick={handleSearch}>Search</button>*/}
       </div>
     </div>
   </section>

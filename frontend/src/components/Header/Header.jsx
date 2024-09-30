@@ -54,8 +54,10 @@ const Header = () => {
           {/* =============== logo ============= */}
           <div>
             {/*<img src={logo} alt="" />*/}
-            <label className='text-textColor text-[20px] leading-7 font-[800]'>
-              iMind
+            <label className='text-textColor text-[20px] leading-7 font-[400]'>
+              <Link to='/'>
+                iMind
+              </Link>
             </label>
           </div>
 

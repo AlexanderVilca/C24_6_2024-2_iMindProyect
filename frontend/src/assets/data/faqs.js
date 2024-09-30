@@ -1,27 +1,27 @@
 export const faqs = [
   {
-    question: "What is your medical care?",
+    question: "¿Qué tipo de apoyo ofrece iMind?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "En iMind, proporcionamos herramientas para mejorar tu bienestar mental, como un blog informativo sobre salud mental, sonidos relajantes, ejercicios de meditación y la posibilidad de consultar con psicólogos profesionales. Nuestra misión es hacer que el cuidado de tu salud mental sea accesible y efectivo, utilizando tecnología innovadora y un enfoque centrado en tus necesidades.",
   },
   {
-    question: "What happens if I need to go a hospital?",
+    question: "¿Qué sucede si necesito hablar con un psicólogo?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "Puedes agendar fácilmente una cita con uno de nuestros psicólogos a través de la plataforma. Ellos te brindarán apoyo especializado para ayudarte a gestionar tus emociones y mejorar tu bienestar.",
   },
   {
-    question: "What happens if I need to go a hospital?",
+    question: "¿Cómo puedo contactar a un profesional de salud mental?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "En iMind, te damos la opción de encontrar y contactar directamente con psicólogos especializados que están disponibles para consultas. Nuestro sistema de agendamiento es fácil de usar y te permite reservar una cita en el momento que mejor te convenga.",
   },
   {
-    question: "Can I visit your medical office?",
+    question: "¿Puedo acceder a recursos de relajación en iMind?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "Sí, ofrecemos una variedad de sonidos relajantes y meditaciones guiadas que puedes usar en cualquier momento para reducir el estrés y mejorar tu concentración.",
   },
   {
-    question: "Does you provide urgent care?",
+    question: "¿Ofrecen asistencia inmediata en casos de crisis emocional?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "En iMind, te damos la opción de encontrar y contactar directamente con psicólogos especializados que están disponibles para consultas. Nuestro sistema de agendamiento es fácil de usar y te permite reservar una cita en el momento que mejor te convenga.",
   },
 ];
