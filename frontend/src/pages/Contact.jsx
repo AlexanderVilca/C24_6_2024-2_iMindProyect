@@ -6,7 +6,7 @@ const Contact = () => {
         Contactenos
       </h2>
       <p className='mb-8 lg:mb-16 font-light text-center text__para'>
-        ¿Tienes alguna pregunta? Dejanos saber :)
+        ¿Tienes algun comentario? Dejanos saber :)
       </p>
       <form action="#" className='space-y-8'>
         <div>
@@ -15,13 +15,13 @@ const Contact = () => {
           className='form__input mt-1' />
         </div>
         <div>
-          <label htmlFor="subject" className='form__label'>Subject</label>
-          <input type="text" name="" id="subject" placeholder='Dejanos saber como podemos ayudarte'
+          <label htmlFor="subject" className='form__label'>Sujeto</label>
+          <input type="text" name="" id="subject" placeholder='Nombre Completo'
           className='form__input mt-1' />
         </div>
         <div className="sm:col-span-2">
           <label htmlFor="message" className='form__label'>Tu mensaje</label>
-          <textarea type="text" name="" id="message" placeholder='Deja un comentario'
+          <textarea type="text" name="" id="message" placeholder='Deja tu comentario'
           className='form__input mt-1' rows={6} />
         </div>
         <button type="submit" className="btn rounded sm:W-fit">Publicar</button>

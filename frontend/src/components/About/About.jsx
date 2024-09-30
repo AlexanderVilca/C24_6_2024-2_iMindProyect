@@ -16,16 +16,17 @@ const About = () => {
 
             {/* ==================== about ===================== */}
             <div className="w-full lg:w-1/2 xl:w-[670px] order-1 lg:order-2">
-                <h2 className='heading'>Proud to be one of the nations best</h2>
+                <h2 className='heading'>Orgullosos de ser una plataforma asociada a el bienestar mental</h2>
                 <p className='text__para'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                En iMind, estamos comprometidos a mejorar la salud mental de las personas, ofreciendo una plataforma accesible y efectiva para gestionar el estrés, la ansiedad, la depresión, entre otras condiciones. Nuestro enfoque combina la tecnología con la empatía, brindando herramientas personalizadas como ejercicios de relajación, meditaciones guiadas y un blog sobre informacion de la salud mental.
+                Seguido de una oportunidad para acordar una consulta con un psicologo.
                 </p>
                 <p className='text__para mt-[30px]'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Nuestra misión es crear una comunidad de apoyo, donde cada persona pueda sentirse comprendida y acompañada. Desde el seguimiento de tu estado emocional hasta eventos interactivos que fomentan el bienestar, iMind te proporciona las herramientas necesarias para tomar el control de tu salud mental y mejorar tu calidad de vida.
                 </p>
 
                 <Link to='/'>
-                    <button className='btn'>Learn More</button>
+                    <button className='btn'>Leer Mas</button>
                 </Link>
             </div>
         </div>

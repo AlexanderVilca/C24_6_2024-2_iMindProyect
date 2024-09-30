@@ -1,20 +1,11 @@
 import { Link } from 'react-router-dom'
-import logo from '../../assets/images/logo.png'
 import { RiLinkedinFill } from 'react-icons/ri'
-import { AiFillYoutube, AiFillGithub, AiOutlineInstagram } from 'react-icons/ai'
+import { AiFillGithub, } from 'react-icons/ai'
 
 const socialLinks = [
   {
     path: "",
-    icon: <AiFillYoutube className='group-hover:text-white w-4 h-5' />,
-  },
-  {
-    path: "",
     icon: <AiFillGithub className='group-hover:text-white w-4 h-5' />,
-  },
-  {
-    path: "",
-    icon: <AiOutlineInstagram className='group-hover:text-white w-4 h-5' />,
   },
   {
     path: "",
@@ -43,27 +34,27 @@ const quickLinks01 = [
 
 const quickLinks02 = [
   {
-    path: "/find-a-doctor",
-    display: "Find a psycologist",
+    path: "/doctors",
+    display: "Buscar un Psicologo",
+  },
+  {
+    path: "/doctors",
+    display: "Agendar una cita",
   },
   {
     path: "/",
-    display: "Request an Appointment",
+    display: "Acceder a herramientas",
   },
   {
     path: "/",
-    display: "Find a Location",
-  },
-  {
-    path: "/",
-    display: "Get an Opinion",
+    display: "Obtener una opinion",
   },
 ];
 
 const quickLinks03 = [
   {
     path: "/contact",
-    display: "Contact Us",
+    display: "Contactenos",
   },
 ];
 
@@ -94,7 +85,7 @@ const Footer = () => {
         </div>
         <div>
             <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-headingColor'>
-              Quick Links
+              Enlaces
             </h2>
 
             <ul>
@@ -105,7 +96,7 @@ const Footer = () => {
           </div>
           <div>
             <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-headingColor'>
-              I want to:
+              Quiero
             </h2>
 
             <ul>
@@ -116,7 +107,7 @@ const Footer = () => {
           </div>
           <div>
             <h2 className='text-[20px] leading-[30px] font-[700] mb-6 text-headingColor'>
-              Support
+              Apoyar
             </h2>
 
             <ul>

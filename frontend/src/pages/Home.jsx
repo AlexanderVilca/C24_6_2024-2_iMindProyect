@@ -26,14 +26,14 @@ const Home = () => {
       <div className='flex flex-col lg:flex-row gap-[90px] items-center justify-betweeen'>
         {/* ============= hero content ============== */}
         <div className='lg:w-[570px]'>
-          <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px]'>We help patients live a healthy, longer life</h1>
+          <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px]'>Tu bienestar mental es nuestra prioridad</h1>
           <p className='text__para'>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit, vivamus curae etiam malesuada sociis nam odio scelerisque, consequat proin nascetur placerat per interdum. Vel lobortis phasellus magna tortor orci ante natoque suspendisse, torquent nulla semper malesuada ligula non integer mus cubilia, nostra rutrum praesent eu magnis sem dignissim. 
+          Te ofrecemos una plataforma innovadora con herramientas accesibles para cuidar y mejorar tu salud mental.          
           </p>
 
-          <button className='btn'>Request an Appointment</button>
+          <button className='btn'>Solicitar una cita</button>
 
-          <div className='mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]'>
+          {/*<div className='mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]'>
             <div>
               <h2 className='text-[36px] leading-[50px] lg:text-[44px] lg:leading-[54px] font-[700] text-headingColor'>
                 30+
@@ -57,7 +57,7 @@ const Home = () => {
               <span className='w-[100px] h-2 bg-irisBlueColor rounded-full block mt-[-14px]'></span>
               <p className='text__para'>Patient Satisfaction</p>
             </div>
-          </div>
+          </div>*/}
         </div>
         {/* ==================== hero content ===================== */}
         
@@ -79,11 +79,10 @@ const Home = () => {
     <div className='container'>
       <div className='lg:w-[470px] mx-auto'>
         <h2 className='heading text-center'>
-          Providing the best medical services
+          Brindando las mejores herramientas
         </h2>
         <p className='text__para text-center'>
-          World class care for everyone. Our health System offers unmatched,
-          expert mental health care.
+          Para un mayor cuidado de la salud mental hacia todas las personas
         </p>
       </div>
 
@@ -95,11 +94,10 @@ const Home = () => {
 
           <div className='mt-[30px]'>
             <h2 className='text-[26px] leading-9 text-headingColor font-[700] text-center'>
-              Find a Doctor
+              Encontrar un Psicologo
             </h2>
             <p className='text-[16px] leading-7 text-textColor font-[400] mt-4 text-center'>
-              World class care for everyone. Our health System offers unmatched,
-              expert mental health care.
+              Oportunidad de buscar un psicologo dentro de la plataforma.
             </p>
 
             <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
@@ -114,11 +112,10 @@ const Home = () => {
 
           <div className='mt-[30px]'>
             <h2 className='text-[26px] leading-9 text-headingColor font-[700] text-center'>
-              Find a Location
+              Encontrar Herramientas
             </h2>
             <p className='text-[16px] leading-7 text-textColor font-[400] mt-4 text-center'>
-              World class care for everyone. Our health System offers unmatched,
-              expert mental health care.
+              Brindamos diferentes herramientas que pueden ayudar con el bienestar mental.
             </p>
 
             <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
@@ -133,11 +130,10 @@ const Home = () => {
 
           <div className='mt-[30px]'>
             <h2 className='text-[26px] leading-9 text-headingColor font-[700] text-center'>
-              Book Appointment
+              Consultar una cita
             </h2>
             <p className='text-[16px] leading-7 text-textColor font-[400] mt-4 text-center'>
-              World class care for everyone. Our health System offers unmatched,
-              expert mental health care.
+              Solicita una cita con un piscologo para una fecha y hora exacta.
             </p>
 
             <Link to='/doctors' className='w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
@@ -154,9 +150,10 @@ const Home = () => {
   <section>
     <div className="container">
       <div className='xl:w-[470px] mx-auto'>
-        <h2 className='heading text-center'>Our medical services</h2>
-        <p className='text__para text-center'>World class care for everyone. Our health System offers unmatched,
-        expert mental health care.</p>
+        <h2 className='heading text-center'>Nuestros servicios de bienestar mental</h2>
+        <p className='text__para text-center'>
+          Ofrecemos herramientas esenciales para cuidar tu salud mental, desde contenidos informativos hasta recursos interactivos que te acompañarán en tu camino hacia el bienestar mental.
+        </p>
       </div>
 
       <ServiceList/>
@@ -169,21 +166,20 @@ const Home = () => {
       <div className='flex items-center justify-between flex-col lg:flex-row'>
         {/* =============== feature content start ============= */}
         <div className='xl:w-[670px]'>
-          <h2 className='heading'>Get Virtual Treatment <br /> anytime.</h2>
+          <h2 className='heading'>Consulta con un psicólogo <br />  en cualquier momento.</h2>
           <ul className="pl-4">
             <li className="text__para">
-              1.Schedule the appointment directly
+              1. Agenda tu cita de manera sencilla
             </li>
             <li className="text__para">
-              2.Search for your physician her, and contact their office
+              2. Encuentra al profesional adecuado
             </li>
             <li className="text__para">
-              3.View our physicians who are accepting new patients, use the
-              online scheduling tool to select an appointment time.
+              3. Consulta con expertos disponibles
             </li>
           </ul>
           <br />
-          <Link to='/' className='btn'> Learn More </Link>
+          <Link to='/doctors' className='btn'> Conoce más </Link>
         </div>
 
         {/* =============== feature img ============= */}
@@ -227,9 +223,8 @@ const Home = () => {
   <section>
     <div className='container'>
       <div className='xl:w-[470px] mx-auto'>
-          <h2 className='heading text-center'>Our Great Doctors</h2>
-          <p className='text__para text-center'>World class care for everyone. Our health System offers unmatched,
-          expert mental health care.</p>
+          <h2 className='heading text-center'>Doctores Especializados</h2>
+          <p className='text__para text-center'>Brindamos profesionales relacionados a la salud mental para una mejor experiencia y consulta.</p>
       </div>
       <DoctorList/>
     </div>
@@ -245,7 +240,7 @@ const Home = () => {
         </div>
 
         <div className='w-full md:w-1/2'>
-          <h2 className='heading'>Most questions by our patients</h2>
+          <h2 className='heading'>Preguntas mas frecuentes</h2>
           <FaqList/>
         </div>
       </div>
@@ -257,9 +252,10 @@ const Home = () => {
   <section>
     <div className="container">
       <div className='xl:w-[470px] mx-auto'>
-            <h2 className='heading text-center'>What our patients say</h2>
-            <p className='text__para text-center'>World class care for everyone. Our health System offers unmatched,
-            expert mental health care.</p>
+            <h2 className='heading text-center'>Lo que nuestros usuarios dicen</h2>
+            <p className='text__para text-center'>
+              En iMind, nos enorgullece ofrecer recursos y servicios que ayudan a nuestros usuarios a mejorar su bienestar emocional, desde consultas con psicólogos hasta ejercicios de meditación y relajación.
+            </p>
       </div>
 
       <Testimonial/>
