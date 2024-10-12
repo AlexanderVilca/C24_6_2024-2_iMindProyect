@@ -79,7 +79,7 @@ const Home = () => {
     <div className='container'>
       <div className='lg:w-[470px] mx-auto'>
         <h2 className='heading text-center'>
-          Brindando las mejores herramientas
+          Brindando servicios
         </h2>
         <p className='text__para text-center'>
           Para un mayor cuidado de la salud mental hacia todas las personas

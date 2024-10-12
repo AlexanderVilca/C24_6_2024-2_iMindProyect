@@ -39,7 +39,7 @@ const Doctors = () => {
       <div className="max-w-[570px] mt-[30px] mx-auto bg-[#0066FF2C] rounded-md flex
       items-center justify-between">
         <input type="search" className="py-4 pl-4 pr-2 bg-transparent w-full focus:outline-none
-        cursor-pointer placeholder:text-textColor" value={query} onChange={e=> setQuery(e.target.value)} />
+        cursor-pointer placeholder:text-textColor" placeholder="Busca un psicologo por nombre" value={query} onChange={e=> setQuery(e.target.value)} />
         {/*<button className="btn mt-0 rounded-[0px] rounded-r-md" onClick={handleSearch}>Search</button>*/}
       </div>
     </div>
@@ -58,9 +58,10 @@ const Doctors = () => {
   <section>
     <div className="container">
       <div className='xl:w-[470px] mx-auto'>
-            <h2 className='heading text-center'>What our patients say</h2>
-            <p className='text__para text-center'>World class care for everyone. Our health System offers unmatched,
-            expert mental health care.</p>
+            <h2 className='heading text-center'>Lo que nuestros usuarios dicen</h2>
+              <p className='text__para text-center'>
+                En iMind, nos enorgullece ofrecer recursos y servicios que ayudan a nuestros usuarios a mejorar su bienestar emocional, desde consultas con psicólogos hasta ejercicios de meditación y relajación.
+              </p>
       </div>
 
       <Testimonial/>

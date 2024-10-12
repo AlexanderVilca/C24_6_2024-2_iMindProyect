@@ -20,11 +20,11 @@ const Dashboard = () => {
     <section>
       <div className='max-w-[1170px] px-5 mx-auto'>
 
-      {/*{ loading && !error && <Loader/> }
+      { loading && !error && <Loader/> }
 
       {error && !loading && <Error errMessage={error}/>}
 
-      { !loading && !error && (*/}
+      { !loading && !error && (
           <div className='grid lg:grid-cols-3 gap-[30px] lg:gap-[50px]'>
             <Tabs tab={tab} setTab={setTab} />
 
@@ -42,8 +42,7 @@ const Dashboard = () => {
 
                 <span className='sr-only'>Info</span>
                 <div className='ml-3 text-sm font-medium'>
-                  To get approval please complete your profile. We&apos;ll
-                  review manually and approve within 3 days
+                  Para obtener la aprobación, complete su perfil. Lo revisaremos manualmente y lo aprobaremos en un plazo de 3 días.
                 </div>
 
                 </div>)}
@@ -80,7 +79,7 @@ const Dashboard = () => {
                     </div>
                   </div>
                   <DoctorAbout name={data.name} about={data.about} qualifications={data.qualifications}
-                  experience={data.experience}/>
+                  experiences={data.experiences}/>
                   </div>
                 }
                 {tab==='appointments' && <Appointments appointments={data.appointments}/>}
@@ -90,8 +89,8 @@ const Dashboard = () => {
             </div>
 
           </div>
-          {/*)
-        }*/}
+          )
+        }
       </div>
     </section>
   )

@@ -9,10 +9,10 @@ export const updateUser = async(req,res) => {
 
         const updateUser = await User.findByIdAndUpdate(id, {$set: req.body}, {new:true})
 
-        res.status(200).json({success:true, message:'Successfully Updated', data:updateUser})
+        res.status(200).json({success:true, message:'Actualizado Exitosamente', data:updateUser})
 
     } catch (err) {
-        res.status(500).json({success:false, message:'Failed to update'})
+        res.status(500).json({success:false, message:'Fallo de actualizacion'})
 
     }
 }

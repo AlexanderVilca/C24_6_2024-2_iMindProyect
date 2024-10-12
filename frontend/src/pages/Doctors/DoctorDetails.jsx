@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react'
 import starIcon from '../../assets/images/Star.png'
 import DoctorAbout from './DoctorAbout'
@@ -33,6 +34,9 @@ const DoctorDetails = () => {
         photo
   } = doctor;
 
+  const roundedAvgRating = averageRating !== undefined ? parseFloat(averageRating.toFixed(2)) : 0;
+
+
   return <section>
     <div className='max-w-[1170px] px-5 mx-auto'>
 
@@ -57,7 +61,7 @@ const DoctorDetails = () => {
               <div className='flex items-center gap-[6px]'>
                 <span className='flex items-center gap-[6px] text-[14px] leading-5 lg:text-[16px]
                 lg:leading-7 font-semibold text-headingColor'>
-                  <img src={starIcon} alt="" /> {averageRating}
+                  <img src={starIcon} alt="" /> {roundedAvgRating}
                 </span>
                 <span className='text-[14px] leading-5 lg:text-[16px]
                 lg:leading-7 font-[400] text-textColor'>
@@ -74,13 +78,13 @@ const DoctorDetails = () => {
             <button
             onClick={()=> setTab('about')} 
             className={`${tab==='about' && 'border-b border-solid border-primaryColor'} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
-              About
+              Informacion
             </button>
 
             <button 
             onClick={()=> setTab('feedback')} 
             className={`${tab==='feedback' && 'border-b border-solid border-primaryColor'} py-2 px-5 mr-5 text-[16px] leading-7 text-headingColor font-semibold`}>
-              FeedBack
+              Reseña
             </button>
           </div>
 

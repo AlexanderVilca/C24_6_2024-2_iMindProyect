@@ -24,7 +24,7 @@ const MyBookings = () => {
 
   {!loading && !error && appointments.length === 0 && (
     <h2 className="mt-7 text-center leading-7 text-[20px] font-semibold
-    text-primaryColor">You did not book any doctor yet</h2>
+    text-primaryColor">No reservaste ninguna consulta todavia</h2>
   )}
     </div>
   )

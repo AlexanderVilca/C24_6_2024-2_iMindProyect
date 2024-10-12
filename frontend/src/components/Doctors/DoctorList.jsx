@@ -18,7 +18,7 @@ const DoctorList = () => {
     lg:met-[55px]">{doctors
       //.filter((doctor) => doctor.id)
       .map((doctor) => (
-        <DoctorCard key={doctor.id} doctor={doctor} />
+        <DoctorCard key={doctor._id} doctor={doctor} />
       ))}</div>
     )}
     </>

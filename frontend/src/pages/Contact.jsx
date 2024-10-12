@@ -15,7 +15,7 @@ const Contact = () => {
           className='form__input mt-1' />
         </div>
         <div>
-          <label htmlFor="subject" className='form__label'>Sujeto</label>
+          <label htmlFor="subject" className='form__label'>Nombre Completo</label>
           <input type="text" name="" id="subject" placeholder='Nombre Completo'
           className='form__input mt-1' />
         </div>

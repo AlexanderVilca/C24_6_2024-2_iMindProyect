@@ -8,10 +8,10 @@ export const updateDoctor = async(req,res) => {
 
         const updateDoctor = await Doctor.findByIdAndUpdate(id, {$set: req.body}, {new:true})
 
-        res.status(200).json({success:true, message:'Successfully Updated', data:updateDoctor})
+        res.status(200).json({success:true, message:'Actualizado Exitosamente', data:updateDoctor})
 
     } catch (err) {
-        res.status(500).json({success:false, message:'Failed to update'})
+        res.status(500).json({success:false, message:'Fallo en actualizar'})
 
     }
 }

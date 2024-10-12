@@ -17,10 +17,10 @@ export const register = async(req,res)=>{
         
         let user = null
         
-        if (role==='patient') {
+        if (role === 'patient') {
             user = await User.findOne({email})
         }
-        else if (role==='doctor') {
+        else if (role === 'doctor') {
             user = await Doctor.findOne({email})
         }
 

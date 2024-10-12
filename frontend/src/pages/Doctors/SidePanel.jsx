@@ -1,19 +1,46 @@
 /* eslint-disable react/prop-types */
+import { toast } from "react-toastify"
+import { BASE_URL, token } from "../../config"
 import convertTime from "../../utils/convertTime"
 
-const SidePanel = ({doctorId, tickedPrice, timeSlots}) => {
+const SidePanel = ({doctorId, ticketPrice, timeSlots}) => {
+
+    const bookingHandle = async() => {
+        try {
+            const res = await fetch(`${BASE_URL}/bookings/checkout-session/${doctorId}`,{
+                method: 'post',
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            })
+
+            const data = await res.json()
+
+            if(!res.ok){
+                throw new Error(data.message + 'Please try again')
+            }
+
+            if(data.session.url){
+                window.location.href = data.session.url
+            }
+
+        } catch (err) {
+            toast.error(err.message)
+        }
+    }
+
   return (
     <div className='shadow-panelShadow p-3 lg:p-5 rounder-md'>
         <div className='flex items-center justify-between'>
-            <p className='text__para mt-0 font-semibold'>Ticket Price</p>
+            <p className='text__para mt-0 font-semibold'>Precio de consulta:</p>
             <span className='text-[16px] leading-7 lg:text-[22px] lg:leading-8 text-headingColor font-bold'>
-                {tickedPrice} BDT
+                S/. {ticketPrice}
             </span>
         </div>
 
         <div className='mt-[30px]'>
             <p className='text__para mt-0 font-semibold text-hedingColor'>
-                Available Time Slots:
+                Horarios Disponibles:
             </p>
             <ul className='mt-3'>
                 {timeSlots?.map((item, index) => (
@@ -29,7 +56,7 @@ const SidePanel = ({doctorId, tickedPrice, timeSlots}) => {
             </ul>
         </div>
 
-        <button className='btn px-2 w-full rounded-md'>Book Appointment</button>
+        <button onClick={bookingHandle} className='btn px-2 w-full rounded-md'>Solicitar Consulta</button>
     </div>
   )
 }

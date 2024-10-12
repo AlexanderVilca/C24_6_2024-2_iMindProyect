@@ -11,7 +11,7 @@ const Feedback = ({reviews, totalRating}) => {
   return <div>
     <div className='mb-[50px]'>
       <h4 className='text-[20px] leading-[30px] font-bold text-headingColor mb-[30px]'>
-        All reviews ({totalRating})
+        Reseñas ({totalRating})
       </h4>
       { reviews?.map((review, index) =>
         (<div key={index} className='flex justify-between gap-10 mb-[30px]'>
@@ -42,7 +42,7 @@ const Feedback = ({reviews, totalRating}) => {
 
     {!showFeedBackForm && (
       <div className='text-center'>
-        <button className='btn' onClick={()=>setShowFeedbackForm(true)}>Give FeedBack</button>
+        <button className='btn' onClick={()=>setShowFeedbackForm(true)}>Comentar</button>
       </div>)}
 
     {showFeedBackForm && <FeedbackForm/>}

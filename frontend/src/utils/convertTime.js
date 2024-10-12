@@ -2,7 +2,7 @@ const convertTime = time => {
 
     // timeparts will return an array
 
-    const timeParts = time.split(":")
+    const timeParts = time.split(" : ")
 
     let hours = parseInt(timeParts[0])
 

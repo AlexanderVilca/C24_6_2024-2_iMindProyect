@@ -1,5 +1,4 @@
 import {useEffect, useRef, useContext} from 'react';
-import logo from '../../assets/images/logo.png';
 import { NavLink, Link } from 'react-router-dom';
 import { BiMenu } from "react-icons/bi";
 import { AuthContext } from '../../context/AuthContext';

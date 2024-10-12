@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
 import { formateDate } from '../../utils/formateDate'
 
 const Appointments = ({appointments}) => {
@@ -8,19 +7,19 @@ const Appointments = ({appointments}) => {
       <thead className='text-xs text-gray-700 uppercase bg-gray-50'>
         <tr>
           <th scope='col' className='px-6 py-3'>
-            Name
+            Paciente
           </th>
           <th scope='col' className='px-6 py-3'>
-            Gender
+            Genero
           </th>
           <th scope='col' className='px-6 py-3'>
-            Payment
+            Estado
           </th>
           <th scope='col' className='px-6 py-3'>
-            Price
+            Precio
           </th>
           <th scope='col' className='px-6 py-3'>
-            Booked on
+            Fecha
           </th>
         </tr>
       </thead>

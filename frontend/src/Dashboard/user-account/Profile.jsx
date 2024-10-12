@@ -17,13 +17,13 @@ const Profile = ({ user }) => {
     password:'',
     photo:null,
     gender:'',
-    bloodType:'',
+    condition:'',
   })
 
   const navigate = useNavigate()
 
   useEffect(()=>{
-    setFormData({name: user.name, email: user.email, password: user.password, bloodType: user.bloodType})
+    setFormData({name: user.name, email: user.email, password: user.password, condition: user.condition})
   },[user])
 
   const handleInputChange = e => {
@@ -90,17 +90,17 @@ const Profile = ({ user }) => {
               aria-readonly readOnly/>
             </div>
             
-            <div className='mb-5'>
+            {/*<div className='mb-5'>
               <input type="password" name="password" placeholder='Password'
               value={formData.password} onChange={handleInputChange}
               className='w-full pr-4 py-3 border-b border-solid border-[#0066FF61]
               focus:outline-none focus:border-b-primaryColor text-[16px] leading-7
               text-headingColor placeholder:text-textColor rounded-md cursor-pointer'/>
-            </div>
+            </div>*/}
 
             <div className='mb-5'>
-              <input type="text" name="bloodType" placeholder='Condition'
-              value={formData.bloodType} onChange={handleInputChange} required
+              <input type="text" name="condition" placeholder='Condition'
+              value={formData.condition} onChange={handleInputChange} required
               className='w-full pr-4 py-3 border-b border-solid border-[#0066FF61]
               focus:outline-none focus:border-b-primaryColor text-[16px] leading-7
               text-headingColor placeholder:text-textColor rounded-md cursor-pointer'/>

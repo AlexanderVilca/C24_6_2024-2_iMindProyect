@@ -5,7 +5,7 @@ import { BsArrowRight } from 'react-icons/bs'
 
 const DoctorCard = ({doctor}) => {
 
-    const {name, avgRating, totalRating, photo, specialization, experiences } = doctor
+    const {name, averageRating, totalRating, photo, specialization, experiences } = doctor
   return (
     <div className="p-3 lg:p-5">
         <div>
@@ -24,7 +24,7 @@ const DoctorCard = ({doctor}) => {
                 <span className='flex items-center gap-[6px] text-[14px] lg:leading-7
                 font-semibold text-headingColor'>
                     <img src={staricon} alt="" />
-                    {avgRating}
+                    {parseFloat(averageRating.toFixed(2))}
                 </span>
                 <span className='text-[14px] lg:leading-6 lg:text-[16px] lg-leading-7
                 font-[400] text-textColor'>({totalRating})</span>
@@ -37,7 +37,7 @@ const DoctorCard = ({doctor}) => {
                 {/*<h3 className='text-[36px] leading-7 lg:text-[18px] lg:leading-[30px]
                 font-semibold text-headingColor'>+{totalPatients} patients</h3>*/}
                 <p className='text-[14px] leading-6 font-[400] text-textColor'>
-                    At {experiences && experiences[0]?.hospital}
+                    En {experiences && experiences[0]?.hospital}
                 </p>
             </div>
 

@@ -3,6 +3,7 @@ import Doctor from '../models/DoctorSchema.js';
 import User from '../models/UserSchema.js';
 
 export const authenticate = async (req, res, next) => {
+
     const authToken = req.headers.authorization;
 
     if (!authToken || !authToken.startsWith('Bearer ')) {
@@ -13,7 +14,7 @@ export const authenticate = async (req, res, next) => {
         const token = authToken.split(' ')[1];
         const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
 
-        req.userid = decoded.id;  // Consistent naming
+        req.userId = decoded.id;  // Consistent naming
         req.role = decoded.role;
 
         next();
@@ -27,7 +28,7 @@ export const authenticate = async (req, res, next) => {
 };
 
 export const restrict = roles => async (req, res, next) => {
-    const userId = req.userid;  // Consistent naming
+    const userId = req.userId;  // Consistent naming
 
     let user;
 
